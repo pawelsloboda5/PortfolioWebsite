@@ -1,0 +1,140 @@
+.body-container {
+    @media (max-width: 600px) {
+      flex-direction: column;
+      max-width: 90%;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+    .section {
+      min-height: 100vh; // Full viewport height
+      width: 100vw; // Full width
+      height: 100%; // Full height
+      max-width: 100%; // Consistent max-width
+      margin: 0 auto; // Centered content
+      padding: 4rem; // Padding
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+    
+  
+        @media (max-width: 768px) {
+            h1 {
+              font-size: 2rem;
+            }
+      
+            p, h2 {
+              font-size: 0.9rem;
+            }
+          }
+      
+          @media (max-width: 600px) {
+            flex-direction: column;
+            max-width: 100%;
+            width: 100vw;
+            margin: auto;
+            padding: 0.5rem;
+          }
+        }
+    
+    .tech-cards-container {
+      text-align: center;
+      color: gray;
+      
+      max-height:100%;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      padding: 0.5rem;
+      margin: 2rem;
+      padding-bottom: 2rem;
+      img {
+        height: 4rem; // Fixed height
+        width: auto; // Width is automatically adjusted to maintain aspect ratio
+        max-width: 4rem; // Maximum width
+        margin: 0 auto;
+        border-radius: 10px;
+        object-fit: contain; // Ensures the image is scaled correctly within the given dimensions
+  
+        @media (max-width: 768px) {
+            height: 100%; // Fixed height
+            width: auto; // Width is automatically adjusted to maintain aspect ratio
+            max-width: 3rem; // Maximum width
+            margin: 0 auto;
+            border-radius: 10px;
+            object-fit: contain; // Ensures the image is scaled correctly within the given dimensions
+        }
+      }
+    }
+    .tech-card{
+        height: 8rem; // Fixed height
+        width: 8rem; // Width is automatically adjusted to maintain aspect ratio
+        max-width: 8rem; // Maximum width
+        margin: 0 auto;
+        border-radius: 10px;
+        object-fit: contain; // Ensures the image is scaled correctly within the given dimensions
+        @media (max-width: 768px) {
+            height: 6rem;
+            max-width: 6rem;
+          }
+    }
+      
+  
+      p {
+        font-size: 1rem;
+  
+        @media (max-width: 768px) {
+          font-size: 0.7rem;
+          object-fit: contain;
+        }
+      }
+    
+    
+    .info-container{
+        display:flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        @media (max-width: 600px) {
+            flex-direction: column;
+            width: 100%;
+            align-items: stretch;
+            justify-content: center;
+            margin: auto;
+            padding: 0.5rem;
+
+          }
+    }
+    // Additional responsive styling as needed
+    .projects-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        
+        @media (max-width: 600px) {
+            display: flex;
+            flex-direction: column;
+            
+            
+        }
+    }
+    .project-card{
+        height: 100%; // Fixed height
+        width: 100%; // Width is automatically adjusted to maintain aspect ratio
+        max-width: 100%; // Maximum width
+        margin: 0 auto;
+        border-radius: 10px;
+        object-fit: contain; // Ensures the image is scaled correctly within the given dimensions
+        @media (max-width: 600px) {
+            display: flex;
+            flex-direction: column;
+            width: 100%; // Width is automatically adjusted to maintain aspect ratio
+            max-width: 100%; // Maximum width
+            margin: 0 auto;
+        
+        }
+    }
+        
+      
+     
+  }
+  
