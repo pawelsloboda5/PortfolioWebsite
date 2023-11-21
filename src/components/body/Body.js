@@ -68,9 +68,9 @@ const nextImageIndex = (imageIndex + 1) % images.length;
 const nextImage = images[nextImageIndex];
 
   return (
-    <div className="body-container bg-transparent max-w-7xl mx-auto  ">
+    <div className="body-container bg-transparent max-w-7xl mx-auto my-auto ">
       {/* Intro Section */}
-    <div className='section intro-container'>
+    <div className='section info-container'>
       <div className='' data-aos="fade-down">
         <div className="flex flex-col md:flex-row items-center md:items-start justify-between pt-20 ">
           <div className="md:flex-2 space-y-6 mobile-h">
@@ -91,7 +91,7 @@ const nextImage = images[nextImageIndex];
       </div>
 
       
-      <div className="flex flex-wrap gap-8 w-full justify-center py-40 pt-70" data-aos="fade-up" data-aos-delay='800'>
+      <div className="flex flex-wrap gap-8 w-full justify-center py-20 pt-40" data-aos="fade-up" data-aos-delay='800'>
         <button  onClick={() => document.getElementById('projects-section').scrollIntoView({ behavior: 'smooth' })} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-8 rounded w-full md:w-auto">
           VIEW PROJECTS
         </button>
@@ -122,7 +122,7 @@ const nextImage = images[nextImageIndex];
     </p>
     
   </div>
-  <div className="feature-item " data-aos='fade-up' data-aos-delay='500'>
+  <div className="feature-item " data-aos='fade-up' data-aos-delay='300'>
     <div className="feature-icon">
       {/* Replace with actual icon component or img tag */}
       <i className="fas fa-tools"></i>
@@ -133,7 +133,7 @@ const nextImage = images[nextImageIndex];
     </p>
     
   </div>
-  <div className="feature-item " data-aos='fade-left' data-aos-delay='1000' data-aos->
+  <div className="feature-item " data-aos='fade-left' data-aos-delay='500' data-aos->
     <div className="feature-icon">
       {/* Replace with actual icon component or img tag */}
       <i className="fas fa-tools"></i>
@@ -179,7 +179,7 @@ const nextImage = images[nextImageIndex];
         <div className='flex flex-col max-w-6xl justify-center '>
 
 {/* First Project */}
-<div data-aos="fade-left" className='flex flex-col h-128 w-full items-center justify-center p-4 py-20'>
+<div data-aos="fade-down" className='flex flex-col h-128 w-full items-center justify-center p-4 py-20'>
   <div className="absolute h-full w-full rounded-xl overflow-hidden ">
     <Slider {...settings}>
       {images.map((img, index) => (
@@ -210,7 +210,7 @@ const nextImage = images[nextImageIndex];
 </div>
 
 {/* Second Project */}
-<div data-aos="fade-left" className='flex flex-col h-128 w-full items-center justify-center p-4 pt-20'>
+<div data-aos="fade-up" className='flex flex-col h-128 w-full items-center justify-center p-4 pt-20'>
   <div className="absolute h-full w-full rounded-xl overflow-hidden ">
     <Slider {...settings}>
       {images2.map((img, index) => (

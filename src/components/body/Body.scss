@@ -1,9 +1,15 @@
 .body-container {
     @media (max-width: 600px) {
-      flex-direction: column;
-      max-width: 90%;
-      margin-top: 2rem;
-      margin-bottom: 2rem;
+        min-height: 100vh; // Full viewport height
+        width: 100vw; // Full width
+        height: 100%; // Full height
+        max-width: 100%; // Consistent max-width
+        margin: 0 auto; // Centered content
+        padding: 2rem; // Padding
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
     .section {
       min-height: 100vh; // Full viewport height
@@ -15,6 +21,8 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      
+      
       
     
   
@@ -40,7 +48,6 @@
     .tech-cards-container {
       text-align: center;
       color: gray;
-      
       max-height:100%;
       box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
       border-radius: 10px;
@@ -85,6 +92,7 @@
         @media (max-width: 768px) {
           font-size: 0.7rem;
           object-fit: contain;
+          text-align: center;
         }
       }
     
@@ -93,6 +101,7 @@
         display:flex;
         justify-content: center;
         flex-wrap: wrap;
+        padding-top: 10vh;
         @media (max-width: 600px) {
             flex-direction: column;
             width: 100%;
