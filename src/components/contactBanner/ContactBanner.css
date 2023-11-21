@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.contact-banner-container {
+    background-color: #007bff;
+    overflow: hidden;
+    position: relative;
+    height: 100px; /* Adjust as necessary */
+    width: 100%;
+    transition: all 2s ease;
+}
+
+.contact-banner-container.expand .contact-content {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.contact-content {
+    max-width: 1200px; /* Adjust as necessary */
+    margin: 0 auto;
+    padding: 20px;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 2s ease, transform 2s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-btn {
+    /* Add button styles */
+}
