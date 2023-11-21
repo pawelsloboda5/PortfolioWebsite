@@ -3,7 +3,7 @@ import './index.css';
 import './App.css';
 import Header from './components/header/Header';
 import CursorCircle from './components/cursor-circle/cursor-circle'; // Import CursorCircle component
-import Body from './components/body/Body';
+import Body from './components/body/body';
 import Footer from './components/footer/Footer';
 import ContactBanner from './components/contactBanner/ContactBanner';
 
