@@ -11,8 +11,8 @@ const Header = () => {
              <div className="max-w-6xl mx-auto px-4 mt-5 flex items-center justify-between">
                 {/* Logo Section */}
                 <div className="flex items-center justify-center w-10 h-20 rounded-[14px] shadow-lg">
-                    <span className="logo-3d font-montserrat mobile-logo">P</span>
-                    <h1 className="text-white font-[Great-Vibes] custom-letter-spacing w-1/2 text-center text-xl translate-x-6 italic mobile-hide ">awel Sloboda
+                    <span className="logo-3d font-montserrat mobile-logo">PA</span>
+                    <h1 className="text-white font-[Great-Vibes] custom-letter-spacing w-1/2 text-center text-xl translate-x-6 italic mobile-hide ">awel Slob
 </h1>
                 </div>
                 <style>
