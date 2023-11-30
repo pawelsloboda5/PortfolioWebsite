@@ -12,7 +12,12 @@
   transition: transform 0.3s ease-in-out;
 }
 
-
+.svg-background-div {
+  background-image: url('C:\portfolioSite\my-portfolio\src\assets\splashVideo.mp4');
+  background-size: cover; /* or contain, depending on your needs */
+  background-repeat: no-repeat;
+  /* other styling as needed */
+}
 .App {
   text-align: center;
 }

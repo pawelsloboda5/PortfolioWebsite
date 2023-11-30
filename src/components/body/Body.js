@@ -25,7 +25,13 @@ import algoProject3 from '../../assets/algo-project-3.png';
 import algoProject4 from '../../assets/algo-project-4.png';
 import algoProject5 from '../../assets/algo-project-5.png';
 import algoProject6 from '../../assets/algo-project-6.png';
-
+import resume from '../../assets/pawelsloboda-resume.pdf';
+import backGroundSplash from '../../assets/backgroundSplash.svg';
+const showResume = () => {
+  var resumeFrame = document.getElementById('resumeFrame');
+  resumeFrame.style.display = 'block';
+  resumeFrame.src = resume;
+}
 
 const TechCard = ({ src, alt, text }) => (
   <div className="text-center tech-card text-gray-500 shadow-xl rounded-xl p-1 bg-slate-900">
@@ -70,7 +76,7 @@ const nextImage = images[nextImageIndex];
   return (
     <div className="body-container bg-transparent max-w-7xl mx-auto my-auto ">
       {/* Intro Section */}
-    <div className='section info-container'>
+    <div className=' svg-background-div section info-container'>
       <div className='' data-aos="fade-down">
         <div className="flex flex-col md:flex-row items-center md:items-start justify-between pt-20 ">
           <div className="md:flex-2 space-y-6 mobile-h">
@@ -95,7 +101,7 @@ const nextImage = images[nextImageIndex];
         <button  onClick={() => document.getElementById('projects-section').scrollIntoView({ behavior: 'smooth' })} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-8 rounded w-full md:w-auto">
           VIEW PROJECTS
         </button>
-        <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-8 border border-blue-500 hover:border-transparent rounded w-full md:w-auto">
+        <button onClick={showResume} className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-8 border border-blue-500 hover:border-transparent rounded w-full md:w-auto">
           VIEW RESUME
         </button>
         <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-8 border border-blue-500 hover:border-transparent rounded w-full md:w-auto">
@@ -240,7 +246,7 @@ const nextImage = images[nextImageIndex];
 </div>
 </div>
 
-
+<iframe id="resumeFrame" className="display:block; width:100%; height:1200px;" frameborder="0"></iframe>
 
       
     </div>

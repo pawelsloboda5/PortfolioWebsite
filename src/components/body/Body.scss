@@ -22,6 +22,12 @@
       justify-content: center;
       align-items: center;
       
+      .svg-background-div {
+        background-image: url('C:\portfolioSite\my-portfolio\src\assets\backgroundSplash.svg');
+        background-size: cover; /* or contain, depending on your needs */
+        background-repeat: no-repeat;
+        /* other styling as needed */
+      }
       
       
     
