@@ -6,7 +6,7 @@ import Header from './components/header/Header';
 import CursorCircle from './components/cursor-circle/cursor-circle'; // Import CursorCircle component
 
 import Footer from './components/footer/Footer';
-import ContactBanner from './components/contactBanner/ContactBanner';
+
 
 function App() {
   return (
@@ -16,9 +16,7 @@ function App() {
       <Body />
       
       <Footer />
-      {/* Other components will go here */
-
-      }
+      
     </div>
     
   );
