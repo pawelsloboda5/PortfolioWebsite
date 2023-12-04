@@ -3,7 +3,7 @@ import profileImage from '../../assets/picForAdobe.jpg';
 
 const HeaderSection = () => {
   return (
-      <div className="flex flex-col md:flex-row items-center md:items-start justify-between ">
+      <div className="header-section flex flex-col md:flex-row items-center md:items-start justify-between  ">
         <div className="md:flex-2 space-y-6">
           <h1 className="text-6xl font-bold text-slate-200 mb-8 py-4 text-left" data-aos="fade-down" data-aos-delay='100'>
             Full Stack Developer For Your Brand

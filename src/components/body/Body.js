@@ -47,10 +47,12 @@ const Body = () => {
             <CubeBackground bounds={actualBounds} />
             <HeaderSection />
             <ButtonSection />
-            <h1 className='text-7xl text-center font-bold mb-10 text-white' data-aos='fade-up'>You're Safe And in Good Hands</h1>
-            <p className='text-[30px] text-center text-gray-400 mb-4 md:w-200 py-6 mobile-text' data-aos='fade-up'>
+            
+            <h1 className='text-container text-7xl text-center font-bold mb-10 text-white' data-aos='fade-up'>You're Safe And in Good Hands</h1>
+            <p className='text-container text-[30px] text-center text-gray-400 mb-4 md:w-200 py-6 ' data-aos='fade-up'>
                 Customer satisfaction comes first, and in order to do that I decided to pickup skills and principles to provide quality service.
             </p>
+           
             <FeatureSection />
             <TechCardSection />
             <ProjectsSection />
