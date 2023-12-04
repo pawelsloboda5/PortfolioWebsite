@@ -2,6 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+
+.App {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+    175deg, 
+    rgba(12, 12, 12, 0.8),
+    rgba(24, 34, 54, 0.8),
+    rgba(17, 21, 26, 0.8)
+  );
+}
+
+.cube-background {
+  position: absolute;
+  background: transparent;
+  opacity:25%;
+  
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Ensures it stays behind all other content */
+  
+}
+.body-container {
+  position: relative; /* This establishes a new positioning context */
+  min-height: 100vh; /* This ensures the container is at least the height of the viewport */
+  width:100%;
+  background: linear-gradient(
+    135deg, 
+    rgba(12, 12, 12, 0.8),
+    rgba(30, 40, 61, 0.8),
+    rgba(6, 8, 10, 0.8)
+  );
+  z-index: 1;
+}
+
+
 .logo-3d {
   color: purple; /* Adjust the color to fit your scheme */
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Gives a shadow to create a depth effect */
@@ -10,10 +51,6 @@
   transition: transform 0.3s ease-in-out;
 }
 
-
-.App {
-  text-align: center;
-}
 .custom-letter-spacing {
   letter-spacing: 0.4em; /* Adjust as needed */
 }

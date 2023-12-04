@@ -43,13 +43,16 @@ const ProjectsSection = () => {
       </div>
       <div className='flex flex-col md:flex-row-reverse items-center justify-center gap-10' data-aos='fade-right'>
         <ProjectSlider images={algoImages} settings={settings} />
-        <div className="project-description bg-gray-700 p-4 text-left max-w-md rounded-lg shadow-lg">
+        <div className="project-description bg-gray-700 p-4 text-left max-w-md rounded-lg shadow-lg h-full">
           <h2 className='text-2xl font-bold text-white mb-3'>Discord Stock Algo Bot</h2>
           <p className='text-white'>
             Created an algorithmic trading bot that leverages the Discord API to deliver real-time stock data to subscribed members.
           </p>
         </div>
       </div>
+      <h1 className='text-7xl font-bold my-20 text-center text-white' data-aos='fade-up'>E-Commerce Support</h1>
+
+      
     </div>
   );
 };

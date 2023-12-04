@@ -3,10 +3,9 @@ import profileImage from '../../assets/picForAdobe.jpg';
 
 const HeaderSection = () => {
   return (
-    <div data-aos="fade-down">
       <div className="flex flex-col md:flex-row items-center md:items-start justify-between ">
         <div className="md:flex-2 space-y-6">
-          <h1 className="text-6xl font-bold text-slate-200 mb-4 py-4 text-left" data-aos="fade-down" data-aos-delay='100'>
+          <h1 className="text-6xl font-bold text-slate-200 mb-8 py-4 text-left" data-aos="fade-down" data-aos-delay='100'>
             Full Stack Developer For Your Brand
           </h1>
           <p className="text-[30px] text-left text-gray-400 mb-4 md:w-200 py-6 mobile-text"data-aos="fade-up" data-aos-delay='300'>
@@ -18,9 +17,10 @@ const HeaderSection = () => {
           <p className="text-gray-400 italic text-center md:text-right md:w-3/4">
             "Many ideas grow better when transplanted into another mind than the one where they sprang up." - Oliver Wendell Holmes
           </p>
+          
         </div>
       </div>
-    </div>
+      
   );
 };
 

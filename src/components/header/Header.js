@@ -8,7 +8,7 @@ const Header = () => {
     };
     return (
         <header className=" border border-gray-900 fixed top-0 left-0 right-0 z-50 bg-transparent" >
-             <div className="max-w-6xl mx-auto px-4 mt-5 flex items-center justify-between">
+             <div className="max-w-6xl mx-10 px-4 mt-5 flex items-center justify-between">
                 {/* Logo Section */}
                 <div className="flex items-center justify-center w-10 h-20 rounded-[14px] shadow-lg">
                     <span className="logo-3d font-montserrat mobile-logo">P</span>
