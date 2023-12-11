@@ -1,0 +1,70 @@
+// ProjectsSection.scss
+$primary-color: rgba(12, 12, 12, 0.8);
+$secondary-color: rgba(24, 34, 54, 0.8);
+$tertiary-color: rgba(17, 21, 26, 0.8);
+$font-family-base: 'Franklin Gothic Medium', 'Arial', sans-serif;
+$font-family-accent: 'Great Vibes', cursive;
+
+.projects-section {
+  margin: auto;
+  padding: 4rem 1rem;
+  background: $secondary-color; // A subtle background color
+  
+
+  .section-title {
+    text-align: center;
+    font-size: 4rem;
+    color: #ffffff;
+    margin-bottom: 4rem;
+    font-family: $font-family-base;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .project-description {
+    background: linear-gradient(to right, #647dee, #7f53ac); // A vibrant gradient
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+    max-width: 450px;
+    color: #fff;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: translateY(-10px);
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      line-height: 1.8;
+      font-size: 1.2rem;
+    }
+  }
+
+  .project-slider {
+    .slick-slide {
+      border-radius: 0.5rem;
+      overflow: hidden;
+      transition: box-shadow 0.3s ease-in-out;
+
+      &:hover {
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .flex-col, .flex-row, .flex-row-reverse {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .project-description {
+      max-width: 100%;
+      margin: 0 auto; // Centering in mobile view
+    }
+  }
+}

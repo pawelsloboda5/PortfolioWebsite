@@ -1,0 +1,71 @@
+// HeaderSection.scss
+.header-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    width: 100vw;
+    height: 90vh;
+    position: relative;
+    overflow: hidden; // For any moving background effects
+  
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  
+    .text-content {
+      max-width: 60vw;
+      position: relative;
+      z-index: 2; // Ensure it's above any background effects
+  
+      h1 {
+        font-size: 4rem;
+        color: #fff;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+        transition: transform 0.3s ease;
+        
+        &:hover {
+          transform: scale(1.05); // Slight zoom effect on hover
+        }
+      }
+  
+      p {
+        font-size: 2rem;
+        color: #f8f8f8;
+        margin-bottom: 1rem;
+      }
+    }
+  
+    .image-content {
+      max-width: 20vw;
+      img {
+        width: 50%;
+        height: auto;
+      }
+    }
+  
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: bottom;
+      margin-top:auto;
+  
+      button {
+        background-color: #4b6cb7; // Adjust color
+        color: white;
+        padding: 0.8rem 1.6rem;
+        border: none;
+        border-radius: 0.4rem;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+  
+        &:hover {
+          background-color: #3b5a9a; // Darker shade on hover
+        }
+      }
+    }
+  }
+  

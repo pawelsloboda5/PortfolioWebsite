@@ -1,24 +1,19 @@
 import React from 'react';
+import './output.css';
 import './index.css';
-import './App.css';
-import Body from './components/body/Body';
+import './App.scss';
 import Header from './components/header/Header';
-import CursorCircle from './components/cursor-circle/cursor-circle'; // Import CursorCircle component
-
+import Body from './components/body/Body';
 import Footer from './components/footer/Footer';
-
+import CursorCircle from './components/cursor-circle/cursor-circle'; 
 
 function App() {
   return (
     <div className="App">
-      
-      <Header  />
+      <Header />
       <Body />
-      
       <Footer />
-      
     </div>
-    
   );
 }
 

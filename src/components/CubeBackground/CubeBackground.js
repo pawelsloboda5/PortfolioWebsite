@@ -41,8 +41,8 @@ const CubeBackground = ( props ) => {
     setBounds(); // Initial bounds setting
 
     const positionSpread = 1;
-    for (let i = 0; i < 30; i++) {
-      cubeSize = Math.random() * 0.03 + 0.01;
+    for (let i = 0; i < 15; i++) {
+      cubeSize = Math.random() * 0.06 + 0.03;
       const geometry = new THREE.BoxGeometry(cubeSize, cubeSize, cubeSize);
       const material = [
         new THREE.MeshBasicMaterial({ color: 0x505050 }), // Dark gray
@@ -72,7 +72,7 @@ const CubeBackground = ( props ) => {
       scene.add(cube);
       cubes.push(cube);
     }
-    for (let i = 0; i < 20; i++) {
+    for (let i = 0; i < 10; i++) {
         cubeSize = Math.random() * 0.03 + 0.01;
         const geometry = new THREE.BoxGeometry(cubeSize, cubeSize, cubeSize);
         const material = [

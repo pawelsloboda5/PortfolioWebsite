@@ -14,6 +14,10 @@ const FeatureItem = ({ title, text, aosType, aosDelay }) => (
 const FeatureSection = () => {
   return (
     <div className="features-container py-10">
+      <h1 className='text-container text-7xl text-center font-bold  text-white' data-aos='fade-up'>You're Safe And in Good Hands</h1>
+            <p className='text-container text-[30px] text-center text-gray-400  ' data-aos='fade-up'>
+                Customer satisfaction comes first, and in order to do that I decided to pickup skills and principles to provide quality service.
+            </p>
       <FeatureItem 
         title="Continuous support"
         text="I will advance your web-based software to keep it efficient, competitive on the market. Using a well-established DevOps processes, It helps me roll out urgent updates within few hours and release new, planned functional modules every other week."
