@@ -1,9 +1,56 @@
-.projects-section {
-  margin: auto;
-  padding: 4rem 1rem;
-  background: rgba(24, 34, 54, 0.8);
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+.hero-background {
+  position: absolute;
+  left: 0;
+  background-image: url("../assets/hero-background.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  align-self: center;
+  z-index: -50;
 }
-.projects-section .section-title {
+.hero-background:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(175deg, 12, 17, 25);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.projects-container {
+  height: 100vh;
+  width: 80vw;
+  padding: 2em;
+}
+
+.project-grid {
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 4rem;
+  padding: 4rem;
+  justify-content: center;
+  align-items: start;
+  min-height: 100vh;
+  width: auto;
+}
+
+.section-title {
   text-align: center;
   font-size: 4rem;
   color: #ffffff;
@@ -11,41 +58,45 @@
   font-family: "Franklin Gothic Medium", "Arial", sans-serif;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
-.projects-section .project-description {
-  background: linear-gradient(to right, #647dee, #7f53ac);
+
+.project-description {
+  background: rgba(100, 125, 222, 0.85);
+  backdrop-filter: blur(5px);
   padding: 2rem;
   border-radius: 1rem;
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
-  max-width: 450px;
   color: #fff;
-  transition: transform 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-.projects-section .project-description:hover {
-  transform: translateY(-10px);
+.project-description:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
 }
-.projects-section .project-description h2 {
+.project-description h2 {
   font-size: 2rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
-.projects-section .project-description p {
-  line-height: 1.8;
-  font-size: 1.2rem;
+.project-description p {
+  line-height: 1.6;
+  font-size: 1rem;
 }
-.projects-section .project-slider .slick-slide {
+
+.project-slider .slick-slide {
   border-radius: 0.5rem;
   overflow: hidden;
   transition: box-shadow 0.3s ease-in-out;
 }
-.projects-section .project-slider .slick-slide:hover {
+.project-slider .slick-slide:hover {
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
+
 @media screen and (max-width: 768px) {
-  .projects-section .flex-col, .projects-section .flex-row, .projects-section .flex-row-reverse {
+  .flex-col, .flex-row, .flex-row-reverse {
     flex-direction: column;
     align-items: center;
   }
-  .projects-section .project-description {
-    max-width: 100%;
+  .project-description {
+    max-width: 100vw;
     margin: 0 auto;
   }
 }

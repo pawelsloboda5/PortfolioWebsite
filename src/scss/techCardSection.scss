@@ -6,7 +6,7 @@ $font-family-base: 'Franklin Gothic Medium', 'Arial', sans-serif;
 $font-family-accent: 'Great Vibes', cursive;
 
 .tech-container {
-    margin: 0 auto;
+    padding: 0;
     width:80vw;
     height:100vh;
     font-weight: bold;
@@ -17,7 +17,7 @@ $font-family-accent: 'Great Vibes', cursive;
     flex-wrap: wrap;
     justify-content: center;
     gap: 4rem;
-    margin: 2rem auto;
+    
   }
   .tech-image {
     text-align: center;

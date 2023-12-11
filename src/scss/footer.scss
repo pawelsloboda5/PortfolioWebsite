@@ -1,0 +1,131 @@
+.footer {
+    width: 100%;
+    background-color: #1a202c; // bg-neutral-900 equivalent
+    color: #a0aec0; // text-gray-400 equivalent
+    position: relative;
+    z-index: 10;
+    
+    .footer-container {
+      max-width: 6xl;
+      margin: auto;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      
+      @media (min-width: 768px) { // md breakpoint
+        flex-direction: row;
+      }
+    }
+  
+    .footer-block {
+      margin-bottom: 1.5rem;
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+  
+      .footer-title {
+        color: #fff; // text-white equivalent
+        font-size: 1.5rem; // text-2xl equivalent
+        font-weight: bold; // font-bold equivalent
+      }
+  
+      .footer-heading {
+        color: #fff; // text-white equivalent
+        font-size: 1.25rem; // text-xl equivalent
+        margin-bottom: 0.5rem;
+      }
+  
+      .footer-links {
+        list-style: none;
+        // Add more styles for the list
+      }
+  
+      .footer-social-link {
+        // Add styles for social media links
+      }
+  
+      .footer-contact-info {
+        // Add styles for contact info
+      }
+    }
+  
+    .footer-copy {
+      text-align: center;
+      color: #718096; // text-gray-500 equivalent
+      margin-top: 2rem;
+      font-size: 0.875rem; // Tailwind's text-base equivalent
+  
+      p {
+        margin: 0;
+      }
+    }
+  }
+  .footer {
+    width: 100%;
+    background-color: #1a202c; // bg-neutral-900 equivalent
+    color: #a0aec0; // text-gray-400 equivalent
+    position: relative;
+    z-index: 10;
+    
+    
+    .footer-container {
+      max-width: 6xl;
+      margin-top: auto;
+      padding: auto;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      
+      @media (min-width: 768px) { // md breakpoint
+        flex-direction: row;
+      }
+    }
+  
+    .footer-block {
+      margin-bottom: 1.5rem;
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+  
+      .footer-title {
+        color: #fff; // text-white equivalent
+        font-size: 1.5rem; // text-2xl equivalent
+        font-weight: bold; // font-bold equivalent
+      }
+  
+      .footer-heading {
+        color: #fff; // text-white equivalent
+        font-size: 1.25rem; // text-xl equivalent
+        margin-bottom: 0.5rem;
+      }
+  
+      .footer-links {
+        list-style: none;
+        // Add more styles for the list
+      }
+  
+      .footer-social-link {
+        // Add styles for social media links
+      }
+  
+      .footer-contact-info {
+        // Add styles for contact info
+      }
+    }
+  
+    .footer-copy {
+      text-align: center;
+      color: #718096; // text-gray-500 equivalent
+      margin-top: 2rem;
+      font-size: 0.875rem; // Tailwind's text-base equivalent
+  
+      p {
+        margin: 0;
+      }
+    }
+  }
+    

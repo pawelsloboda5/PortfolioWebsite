@@ -32,14 +32,37 @@ $font-family-accent: 'Great Vibes', cursive;
 
 // Global styles
 .App {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
   width:100%;
   padding: 0;
   overflow-x: hidden;
   background: linear-gradient(175deg, $primary-color, $secondary-color, $tertiary-color);
   background-size: 400% 400%;
+  .content-wrapper {
+    flex-grow: 1;
+  }
+  
+  
 }
+.body-container {
+  flex: relative;
+  flex-direction: column;
+  min-height: 100vh;
+  width:auto;
+  padding:10vw;
+  padding-top: 5%;
+  background: linear-gradient(125deg, $primary-color, $secondary-color, $tertiary-color);
+  z-index: 1;
+  > * { // Targeting direct children of .body-container
+    margin-bottom: 20vh; // Adjust this value as needed for spacing
 
+    &:last-child {
+      margin-bottom: 0; // Remove margin for the last section
+    }
+  }
+}
 .cube-background {
   @include flex-center;
   position: absolute;
@@ -51,19 +74,6 @@ $font-family-accent: 'Great Vibes', cursive;
   height: 100%;
   z-index: -1;
 }
-
-.body-container {
-  position: relative;
-  align-items: center;
-  min-height: 100vh;
-  width:auto;
-  padding:10vw;
-  padding-top: 5%;
-  background: linear-gradient(125deg, $primary-color, $secondary-color, $tertiary-color);
-  z-index: 1;
-  
-}
-
 
 
 .custom-letter-spacing {
@@ -125,7 +135,6 @@ $font-family-accent: 'Great Vibes', cursive;
   justify-content: space-around;
   align-items: stretch;
   flex-wrap: wrap;
-  margin: 0 auto;
   width:80vw;
   height:100vh;
 }

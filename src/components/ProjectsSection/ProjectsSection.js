@@ -1,6 +1,7 @@
 import React from 'react';
-import '../../css/projectsSection.css';
+import '../../scss/projectsSection.scss';
 import ProjectSlider from './ProjectSlider';
+import heroBackgroundImage from '../../assets/hero-background.jpg';
 import discordProject1 from '../../assets/discord-project-1.png';
 import discordProject2 from '../../assets/discord-project-2.png';
 import discordProject3 from '../../assets/discord-project-3.png';
@@ -27,32 +28,31 @@ const algoImages = [algoProject1, algoProject2, algoProject3, algoProject4, algo
 
 const ProjectsSection = () => {
   return (
-    <div id="projects-section" className="projects-section">
-      <div className='section-title' data-aos="fade-down">
-        <h1 className='text-5xl font-bold text-white'>Projects</h1>
-      </div>
-      <div className='flex flex-col md:flex-row items-center justify-center gap-10' data-aos='fade-left'>
-        <ProjectSlider images={discordImages} settings={settings} />
-        <div className="project-description bg-gray-700 p-4 text-left max-w-md rounded-lg shadow-lg">
-          <h2 className='text-2xl font-bold text-white mb-3'>Discord Stock News Scrape Bot</h2>
-          <p className='text-white'>
-            Employed the BeautifulSoup library to extract visible text from HTML elements of various websites.
-            Conducted regular expression searches to identify keywords associated with positive and negative sentiments.
-            Leveraged the Discord webhook API to deliver real-time data updates to subscribed members.
-          </p>
-        </div>
-      </div>
-      <div className='flex flex-col md:flex-row-reverse items-center justify-center' data-aos='fade-right'>
-        <ProjectSlider images={algoImages} settings={settings} />
-        <div className="project-description bg-gray-700 p-4 text-left max-w-md rounded-lg shadow-lg ">
-          <h2 className='text-2xl font-bold text-white '>Discord Stock Algo Bot</h2>
-          <p className='text-white'>
-            Created an algorithmic trading bot that leverages the Discord API to deliver real-time stock data to subscribed members.
-          </p>
-        </div>
-      </div>
-
+    <div className="projects-container">
+      <div className='hero-background' ></div>
       
+      <h1 className='section-title'>Projects</h1>
+      <div className='project-grid'>
+        <div className='project-item' data-aos='fade-up'>
+          <ProjectSlider images={discordImages} settings={settings} />
+          <div className="project-description">
+            <h2>Discord Stock News Scrape Bot</h2>
+            <p>
+              Employed the BeautifulSoup library to extract visible text from HTML elements of various websites...
+            </p>
+          </div>
+        </div>
+        <div className='project-item' data-aos='fade-up'>
+          <ProjectSlider images={algoImages} settings={settings} />
+          <div className="project-description">
+            <h2>Discord Stock Algo Bot</h2>
+            <p>
+              Created an algorithmic trading bot that leverages the Discord API to deliver real-time stock data...
+            </p>
+          </div>
+        </div>
+
+      </div>
     </div>
   );
 };
