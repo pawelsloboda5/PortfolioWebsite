@@ -56,7 +56,8 @@
 }
 .footer .footer-container {
   max-width: 6xl;
-  margin: auto;
+  margin-top: auto;
+  padding: auto;
   padding: 1rem;
   display: flex;
   flex-direction: column;
