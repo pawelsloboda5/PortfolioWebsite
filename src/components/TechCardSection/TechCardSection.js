@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../scss/techCardSection.scss';
+import '../../css/techCardSection.css';
 import javascriptlogo from '../../assets/JavaScript-logo.png';
 import reactLogo from '../../assets/React-icon.svg.png';
 import tailwindLogo from '../../assets/tailwind-logo.png';

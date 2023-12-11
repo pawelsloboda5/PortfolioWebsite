@@ -1,5 +1,75 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-.buttonStyle {
+.header {
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  background: transparent;
+  padding: 2rem;
+  width: 100vw;
+}
+.header .max-width-container {
+  width: 80vw;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 20vh;
+}
+.header .logo-3d {
+  color: rgb(126, 126, 163);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  font-size: 60px;
+  font-weight: bold;
+  font-family: "Great Vibes", cursive;
+  transition: color 0.3s ease-in-out;
+  animation: rotateY 3s infinite;
+}
+@media (max-width: 768px) {
+  .header .logo-3d {
+    font-size: 45px;
+  }
+}
+.header .logo-3d:hover {
+  color: rgb(91, 91, 226);
+  animation: rotateY 3s infinite, colorChange 3s infinite;
+}
+.header .header-name {
+  font-size: 40px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+@media (max-width: 768px) {
+  .header .header-name {
+    font-size: 30px;
+  }
+}
+@keyframes rotateY {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+@keyframes colorChange {
+  0%, 100% {
+    color: rgb(126, 126, 163);
+  }
+  50% {
+    color: rgb(91, 91, 226);
+  }
+}
+.header .buttonStyle {
   position: relative;
   z-index: 1;
   display: inline-flex;
@@ -12,7 +82,7 @@
   text-transform: uppercase;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.23);
   letter-spacing: 2px;
-  color: rgba(147, 147, 161, 0.8);
+  color: rgba(255, 255, 255, 0.8);
   background: linear-gradient(90deg, rgba(16, 16, 17, 0.8), rgba(38, 51, 78, 0.8), rgba(17, 21, 26, 0.8));
   background-size: 200% 200%;
   cursor: pointer;
@@ -24,13 +94,16 @@
   padding: 1em 2em;
   font-size: 1.2rem;
 }
-.buttonStyle:hover {
+.header .buttonStyle:hover {
   transform: translateY(-3px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 15px 30px rgba(0, 4, 8, 0.4);
   background-position: right center;
+  opacity: 100%;
+  font-stretch: expanded;
+  color: rgb(174, 177, 248);
 }
-.buttonStyle:active {
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
+.header .buttonStyle:active {
+  box-shadow: 0px 10px 15px rgba(0, 4, 12, 0.4);
 }
 
 @keyframes bounce {
@@ -53,7 +126,8 @@
   }
 }
 .buttonStyle:hover {
-  animation: shimmer 2s infinite linear;
+  opacity: 100%;
+  animation: shimmer 1s infinite linear;
 }
 
 @keyframes shimmer {
@@ -64,18 +138,23 @@
     background-position: 150% 0;
   }
 }
-@media (max-width: 600px) {
-  .header nav {
-    flex-direction: column;
+@media (max-width: 48rem) {
+  .max-width-container {
+    padding: 0 5%;
+    width: 80%;
   }
-  .header nav a {
-    margin: 10px 0;
+  .max-width-container .logo-3d, .max-width-container .nav-items, .max-width-container .hero, .max-width-container .h1 {
+    font-size: 3em;
   }
-  .header .hero h1 {
-    font-size: 2em;
-  }
-  .header .hero p {
+  .max-width-container .buttonStyle {
     font-size: 1em;
+    align-items: right;
+    padding: 1em 1em;
+    height: 6vh;
+  }
+  .max-width-container .logo-3d {
+    padding: 0em;
+    margin: auto;
   }
 }
 @keyframes colorChange {
@@ -86,5 +165,3 @@
     color: rgb(91, 91, 226);
   }
 }
-
-/*# sourceMappingURL=header.css.map */

@@ -1,6 +1,6 @@
 // HeaderSection.js
 import React from 'react';
-import '../../scss/headerSection.scss';
+import '../../css/headerSection.css';
 import profileImage from '../../assets/adobePic.png';
 
 const HeaderSection = () => {

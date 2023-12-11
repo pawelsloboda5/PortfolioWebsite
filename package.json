@@ -19,13 +19,12 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "npm run build-css && npm run build-scss && react-scripts start",
-    "build": "npm run build-css && npm run build-scss && react-scripts build",
-    "build-css": "tailwindcss build -i src/App.scss -o src/output.css",
-    "build-scss": "sass src/scss:src/css",
+    "start": "npm run compile-scss && react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev": "webpack-dev-server --config webpack.dev.js"
+    "compile-scss": "sass src/scss:src/css --no-source-map",
+    "postinstall": "npm run compile-scss"
   },
   "eslintConfig": {
     "extends": [

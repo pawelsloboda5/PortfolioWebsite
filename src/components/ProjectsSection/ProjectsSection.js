@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../scss/projectsSection.scss';
+import '../../css/projectsSection.css';
 import ProjectSlider from './ProjectSlider';
 import discordProject1 from '../../assets/discord-project-1.png';
 import discordProject2 from '../../assets/discord-project-2.png';

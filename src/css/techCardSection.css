@@ -1,0 +1,54 @@
+.tech-container {
+  margin: 0 auto;
+  width: 80vw;
+  height: 100vh;
+  font-weight: bold;
+  text-align: center;
+}
+
+.tech-Div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+  margin: 2rem auto;
+}
+
+.tech-image {
+  text-align: center;
+  gap: 5rem;
+  color: #ffffff;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-radius: 0.75rem;
+  padding: 0.5rem;
+  background: linear-gradient(165deg, rgba(12, 12, 12, 0.8) 20%, rgba(24, 34, 54, 0.8) 60%);
+  background-size: 200% 100%;
+  position: relative;
+  overflow: hidden;
+  width: 8rem;
+}
+.tech-image img {
+  height: 5rem;
+  width: 5rem;
+  margin: 0 auto;
+  border-radius: 0.75rem;
+}
+.tech-image p {
+  margin-top: 0.5rem;
+}
+.tech-image:before {
+  content: "";
+  position: absolute;
+  bottom: 90%;
+  left: 40%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(165deg, transparent 20%, rgba(17, 21, 26, 0.8) 80%);
+  transition: all 0.5s ease;
+  transform: rotate(45deg);
+}
+.tech-image:hover:before {
+  bottom: 10%;
+  left: -100%;
+  background: linear-gradient(165deg, transparent 80%, rgba(24, 34, 54, 0.8) 100%);
+}
