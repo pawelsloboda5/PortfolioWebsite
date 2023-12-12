@@ -9,10 +9,10 @@ const HeaderSection = () => {
   return (
     <div className="header-section">
       <div className="text-content">
-        <h1 className="text-6xl font-bold text-slate-200 text-left" data-aos="fade-down" data-aos-delay='100'>
+        <h1 className=" font-bold text-slate-200 text-left" data-aos="fade-down" data-aos-delay='100'>
           Full Stack Developer For Your Brand
         </h1>
-        <p className="text-[30px] text-left text-white mb-4 md:w-200 py-6 mobile-text" data-aos="fade-up" data-aos-delay='300'>
+        <p className=" text-left text-white mb-4 md:w-200 py-6 mobile-text" data-aos="fade-up" data-aos-delay='300'>
           Hey there! Call me Pawel Sloboda. I enjoy creating kickass websites and web/mobile apps, ones that suit your desires and needs using the latest technologies and cleanest design patterns.
         </p>
         <div className="button-container" data-aos="fade-up" data-aos-delay='800'>

@@ -15,7 +15,7 @@ $font-family-accent: 'Great Vibes', cursive;
   display: flex;
   flex-direction: column;
   height:100vh;
-  max-height:200vh;
+  max-height:130vh;
   width:80vw;
   margin-bottom: 10em;
   padding: 0; 
@@ -32,7 +32,7 @@ $font-family-accent: 'Great Vibes', cursive;
 
 // Hero background
 .hero-background {
-  margin: 0 auto;
+  margin: 0 ;
   padding: 0;
   position: absolute;
   left: 0;
@@ -62,7 +62,7 @@ $font-family-accent: 'Great Vibes', cursive;
     height: 100%;
     background: inherit;
     z-index: 0;
-    animation: inherit;
+    
   }
 }
 
@@ -80,15 +80,18 @@ $font-family-accent: 'Great Vibes', cursive;
 }
 
 .project-grid{
+  position: relative;
   z-index: 2;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 4rem;
-  padding: 4rem;
+  margin: 0;
+  padding: 0;
   justify-content: center;
   align-items: start;
-  max-height: 100vh;
+  
+  
   width: auto;
 }
 

@@ -32,6 +32,7 @@ $font-family-accent: 'Great Vibes', cursive;
 
 // Global styles
 .App {
+  position: relative;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -56,7 +57,7 @@ $font-family-accent: 'Great Vibes', cursive;
   background: linear-gradient(125deg, $primary-color, $secondary-color, $tertiary-color);
   z-index: 1;
   > * { // Targeting direct children of .body-container
-    margin-bottom: 20vh; // Adjust this value as needed for spacing
+    margin: 0,10vh; // Adjust this value as needed for spacing
 
     &:last-child {
       margin-bottom: 0; // Remove margin for the last section
@@ -175,59 +176,81 @@ $font-family-accent: 'Great Vibes', cursive;
 
 @media screen and (max-width: 768px) {
   .App {
-    background: linear-gradient(90deg, rgba(12, 12, 12, 0.95), rgba(71, 101, 160, 0.7), rgba(17, 21, 26, 0.9));
-    width:100%;
-  }
-  .body-container {
+    background: linear-gradient(175deg, $primary-color, $secondary-color, $tertiary-color);
+    background-size: 400% 400%;
     position: relative;
-    align-items: center;
-    min-height: 100vh;
-    width:auto;
-    padding:10vw;
-    padding-top: 15%;
-    background: linear-gradient(125deg, $primary-color, $secondary-color, $tertiary-color);
-    z-index: 1;
-  }
-  .text-container{
-    font-size:2em;
-    padding: 0.5em;
-    margin: auto;
-  }
-  .body-container p{
-    font-size:1em;
-
-  }
-
-  .button-container{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -6em;
-    margin-bottom: -6em;
-  }
-  .custom-letter-spacing2 {
-    @include responsive-font(2em);
-  }
-
-  .feature-item {
-    width: 100%; /* Full width for feature items */
-    margin: 10px 0; /* Adjusted margin */
-  }
-
-  .feature-icon {
-    width: 40px; /* Smaller icon size */
-    height: 40px;
-  }
-
-  .feature-title, .feature-text {
-    font-size: 16px; /* Smaller font size for text */
-  }
-  .features-container {
     flex-direction: column;
-  }
-  
-}
+    min-height: 100vh;
+    width: 100%;
+    padding:0;
+    overflow-x: hidden;
 
+    .body-container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 5vw;
+      
+      margin: 0;
+      width: 100%;
+      min-height: 100vh;
+      background: linear-gradient(125deg, $primary-color, $secondary-color, $tertiary-color);
+      z-index: 1;
+
+      > * {
+        margin: 0 auto; // Centered and no additional vertical margin
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      h1 {
+        font-size: 2em; // Adjusted for readability
+      }
+
+      p {
+        font-size: 1em;
+      }
+    }
+
+    .text-container {
+      font-size: 1em;
+      padding: 0.5em;
+      margin: auto;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 2em 0; // Adjusted margin to avoid overlap
+    }
+
+    .custom-letter-spacing2 {
+      @include responsive-font(2em);
+    }
+
+    .feature-item {
+      width: 100%;
+      margin: 10px 0;
+    }
+
+    .feature-icon {
+      width: 40px;
+      height: 40px;
+    }
+
+    .feature-title, .feature-text {
+      font-size: 1em; // Adjusted for readability
+    }
+
+    .features-container {
+      flex-direction: column;
+    }
+  }
+}
 
 
 

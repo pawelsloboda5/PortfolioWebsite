@@ -20,7 +20,7 @@ const TechCard = ({ src, alt, text }) => (
 const TechCardSection = () => {
   return (
     
-      <div className="tech-container text-center font-bold py-20">
+      <div className="tech-container text-center font-bold ">
         <h1 className='text-5xl font-bold mb-10 text-white' data-aos='fade-down'>Tools of the Future</h1>
         <h1 className='text-2xl font-bold mb-10 text-gray-500' data-aos='fade-up'>Frontend technologies I prefer using</h1>
         <div className='tech-Div flex flex-wrap justify-center ' data-aos='fade-up' data-aos-delay='100'>
