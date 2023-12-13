@@ -4,7 +4,7 @@ import React from 'react';
 const ButtonSection = () => {
     const resumeUrl ="https://github.com/pawelsloboda5/Resume/blob/main/pawelsloboda-resume.pdf";
   return (
-    <div className="button-container flex flex-wrap gap-8 w-full justify-center py-40" data-aos="fade-up" data-aos-delay='800'>
+    <div className="button-container " data-aos="fade-up" data-aos-delay='800'>
       <button onClick={() => document.getElementById('projects-section').scrollIntoView({ behavior: 'smooth' })} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-8 rounded w-full md:w-auto">
         VIEW PROJECTS
       </button>

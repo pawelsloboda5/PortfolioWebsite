@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  max-height: 200vh;
+  max-height: 130vh;
   width: 80vw;
   margin-bottom: 10em;
   padding: 0;
@@ -18,7 +18,7 @@
   }
 }
 .hero-background {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   position: absolute;
   left: 0;
@@ -43,7 +43,6 @@
   height: 100%;
   background: inherit;
   z-index: 0;
-  animation: inherit;
 }
 
 @keyframes gradient {
@@ -58,15 +57,16 @@
   }
 }
 .project-grid {
+  position: relative;
   z-index: 2;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 4rem;
-  padding: 4rem;
+  margin: 0;
+  padding: 0;
   justify-content: center;
   align-items: start;
-  max-height: 100vh;
   width: auto;
 }
 
@@ -113,12 +113,63 @@
 }
 
 @media screen and (max-width: 768px) {
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw; /* Full viewport width */
+    padding: 2rem 0; /* Add padding to top and bottom */
+    margin: 5; /* Center the container */
+    max-height: 100vh; /* Adjust height automatically */
+    height: auto;
+  }
+  .project-grid {
+    position: relative;
+    align-items: center;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 4rem;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: start;
+    max-width: 90vw;
+  }
+  .section-title {
+    text-align: center;
+    font-size: 4rem;
+    color: #ffffff;
+    margin-bottom: 4rem;
+    font-family: "Franklin Gothic Medium", "Arial", sans-serif;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 20;
+  }
+  .project-description {
+    background: rgba(100, 125, 222, 0.85);
+    backdrop-filter: blur(5px);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+  .project-description:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  }
+  .project-description h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    z-index: 20;
+  }
+  .project-description p {
+    line-height: 1.6;
+    font-size: 1rem;
+  }
   .flex-col, .flex-row, .flex-row-reverse {
     flex-direction: column;
     align-items: center;
-  }
-  .project-description {
-    max-width: 100vw;
-    margin: 0 auto;
   }
 }

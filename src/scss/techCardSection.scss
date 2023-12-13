@@ -4,7 +4,7 @@ $secondary-color: rgba(24, 34, 54, 0.8);
 $tertiary-color: rgba(17, 21, 26, 0.8);
 $font-family-base: 'Franklin Gothic Medium', 'Arial', sans-serif;
 $font-family-accent: 'Great Vibes', cursive;
-
+@media screen and (min-width: 768px) {
 .tech-container {
     display: flex;
     flex-direction: column;
@@ -66,5 +66,71 @@ $font-family-accent: 'Great Vibes', cursive;
       left: -100%;
       
       background: linear-gradient(165deg, transparent 80%, $secondary-color 100%);
+    }
+   
+  }
+}
+
+  @media screen and (max-width: 768px) {
+    .tech-container {
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw; /* Full viewport width */
+    padding: 2rem 0; /* Add padding to top and bottom */
+    margin: 0 auto; /* Center the container */
+    height: auto; /* Adjust height automatically */
+  
+    }
+    .tech-Div{
+      display: flex;
+    flex-direction: row; /* Align items in a row */
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: center;
+    align-items: center;
+    padding: 1rem; /* Reduce padding */
+    gap: 2rem; /* Adjust gap for mobile */
+    width: 100%; /* Full width of the container */
+    }
+    .tech-image {
+      text-align: center;
+      gap: 5rem;
+      color: #ffffff; // Gray-500
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      border-radius: 0.75rem;
+      padding: 0.5rem;
+      background: linear-gradient(165deg, $primary-color 20%, $secondary-color 60%);
+      background-size: 200% 100%;
+      width:30vw;
+      
+      img {
+        height: 5rem; // Tailwind's h-20
+        width: 100%; // Tailwind's w-20
+        margin: 0 auto; // Centers the image horizontally
+        border-radius: 0.75rem; // Tailwind's rounded-xl
+      }
+    
+      p {
+        margin-top: 0.5rem; // Tailwind's mt-2
+        // Additional paragraph styles if needed
+      }
+      &:before {
+        content: "";
+        position: relative;
+        bottom: 90%;
+        left: 40%;
+        width: 200%;
+        height: 200%;
+        background: linear-gradient(165deg, transparent 20%, $tertiary-color 80%);
+        transition: all 0.5s ease;
+        transform: rotate(45deg);
+      }
+      &:hover:before {
+        bottom: 10%;
+        left: -100%;
+        
+        background: linear-gradient(165deg, transparent 80%, $secondary-color 100%);
+      }
     }
   }

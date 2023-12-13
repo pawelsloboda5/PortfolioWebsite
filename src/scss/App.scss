@@ -31,6 +31,7 @@ $font-family-accent: 'Great Vibes', cursive;
 @tailwind utilities;
 
 // Global styles
+@media screen and (min-width: 768px) {
 .App {
   position: relative;
   display: flex;
@@ -47,6 +48,7 @@ $font-family-accent: 'Great Vibes', cursive;
   
   
 }
+
 .body-container {
   flex: relative;
   flex-direction: column;
@@ -64,6 +66,7 @@ $font-family-accent: 'Great Vibes', cursive;
     }
   }
 }
+
 .cube-background {
   @include flex-center;
   position: absolute;
@@ -172,84 +175,96 @@ $font-family-accent: 'Great Vibes', cursive;
   font-size: 18px; /* Adjust text size as needed */
   font-family: monospace;
 }
-
+}
 
 @media screen and (max-width: 768px) {
   .App {
     background: linear-gradient(175deg, $primary-color, $secondary-color, $tertiary-color);
     background-size: 400% 400%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    width: 100%;
-    padding:0;
+    width:100vw;
+    min-height:100vh;
+   
     overflow-x: hidden;
-
-    .body-container {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 5vw;
-      
-      margin: 0;
-      width: 100%;
-      min-height: 100vh;
-      background: linear-gradient(125deg, $primary-color, $secondary-color, $tertiary-color);
-      z-index: 1;
-
-      > * {
-        margin: 0 auto; // Centered and no additional vertical margin
-        &:last-child {
-          margin-bottom: 0;
-        }
-      }
-
-      h1 {
-        font-size: 2em; // Adjusted for readability
-      }
-
-      p {
-        font-size: 1em;
-      }
+    
+    
+    .cube-background {
+      @include flex-center;
+      position: absolute;
+      background: transparent;
+      opacity: 25%;
+      top: 0;
+      left: 0;
+      max-width: 100%;
+      height: 100%;
+      z-index: -1;
     }
 
-    .text-container {
-      font-size: 1em;
-      padding: 0.5em;
-      margin: auto;
-    }
-
-    .button-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 2em 0; // Adjusted margin to avoid overlap
-    }
-
-    .custom-letter-spacing2 {
-      @include responsive-font(2em);
-    }
-
-    .feature-item {
-      width: 100%;
-      margin: 10px 0;
-    }
-
-    .feature-icon {
-      width: 40px;
-      height: 40px;
-    }
-
-    .feature-title, .feature-text {
-      font-size: 1em; // Adjusted for readability
-    }
-
-    .features-container {
-      flex-direction: column;
+  
+  }
+  .body-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-y: hidden;
+    width: 100vw;
+    padding: 5% 0; /* Adjust padding for top and bottom */
+    background: linear-gradient(125deg, $primary-color, $secondary-color, $tertiary-color);
+    z-index: 1;
+    > * {
+      margin: 10px 0; /* Adjust vertical margins */
     }
   }
+  .features-container {
+   flex-direction: column;
+   justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    width: 90vw;
+    padding: 0 ; /* Add padding to top and bottom */
+    margin: 0 ; /* Center the container */
+    z-index: 5;
+    h1 {
+      font-size:4rem;
+    }
+  
+    
+  }
+ 
+  
+  .feature-item {
+    background-color: #2A2E35; /* Adjust color as needed */
+    color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+    
+    text-align: center;
+    
+  }
+  
+  .feature-icon {
+    background-color: #007BFF; /* Adjust icon background color as needed */
+    border-radius: 50%;
+    width: 60px; /* Adjust icon size as needed */
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px; /* Center icon and add margin below */
+    font-size: 30px; /* Adjust icon size as needed */
+  }
+  
+  .feature-title {
+    font-size: 24px; /* Adjust title size as needed */
+    margin-bottom: 15px;
+  }
+  
+  .feature-text {
+    font-size: 18px; /* Adjust text size as needed */
+    font-family: monospace;
+  }
+  
 }
 
 

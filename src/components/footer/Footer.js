@@ -32,11 +32,12 @@ const Footer = () => {
           <p className="footer-contact-info">Email: contact@pawelsloboda5@gmail.com</p>
           {/* Additional contact info */}
         </div>
-      </div>
-
-      <div className="footer-copy">
+        <div className="footer-copy">
         <p>&copy; {new Date().getFullYear()} Pawel Sloboda. All rights reserved.</p>
       </div>
+      </div>
+
+      
     </footer>
   );
 };
